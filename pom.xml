@@ -11,23 +11,23 @@
     </properties>
 
     <dependencies>
-        <!-- Servlet API (Provided by the server like Tomcat) -->
+        <!-- Modern Jakarta Servlet API (Tomcat 10+) -->
         <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>javax.servlet-api</artifactId>
-            <version>4.0.1</version>
+            <groupId>jakarta.servlet</groupId>
+            <artifactId>jakarta.servlet-api</artifactId>
+            <version>5.0.0</version>
             <scope>provided</scope>
         </dependency>
         
-        <!-- JSP API -->
+        <!-- Modern Jakarta JSP API -->
         <dependency>
-            <groupId>javax.servlet.jsp</groupId>
-            <artifactId>javax.servlet.jsp-api</artifactId>
-            <version>2.3.3</version>
+            <groupId>jakarta.servlet.jsp</groupId>
+            <artifactId>jakarta.servlet.jsp-api</artifactId>
+            <version>3.0.0</version>
             <scope>provided</scope>
         </dependency>
 
-        <!-- MySQL Connector (Assuming your registration system uses MySQL) -->
+        <!-- MySQL Connector (Leave this exactly as is) -->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
